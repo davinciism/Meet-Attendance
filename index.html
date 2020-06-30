@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Attendance - View your meeting's attendees</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+
+
+
+    <nav class="teal darken-4">
+        <div class="nav-wrapper">
+            <div class="container">
+                <a href="#!" class="brand-logo">Meet Attendance</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-dark btn-flat" id="openModal1">Log In</a></li>
+                    <!-- Add this if needed for modal to the upper element -->
+                    <li><a href="#register" >Register</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="waves-effect waves-dark btn teal darken-4" data-target="modal1" id="openModal2">Log In</a></li>
+        <li><a href="#register" >Register</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+    </ul>
+
+
+
+
+    <section id="overview">
+        <div class="row container">
+            <div class="col s6 img-container">
+                <img src="videoconferencefinal.png" alt="">
+            </div>
+            <div class="col s6 text-container">
+                <div class="text">
+                    <h5>Meet Attendance</h5>
+                    <p>Get the attendance of your virtual class in a single click!</p>
+                    <a href="#register">
+                        <button class="btn-large waves-effect teal darken-4">Register</button>    
+                        <a data-target="modal1" id="openModal3">Log In</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="register" class="container ">
+        <div class="create row">
+            <p>Create your account</p>
+        </div>
+        <form action="" class="z-depth-3 row">
+            <div>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+                <div class="email">
+                    <label for="email">User name:</label><br>
+                    <input type="text" id="email" name="email">   
+                    <!-- <p>@meetattendance.xyz</p>  -->
+                </div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password">
+                <label for="phone">Phone Number:</label><br>
+                <input type="text" id="phone" name="phone">
+                <button class="btn waves-effect teal darken-4">Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+
+
+    <section id="howitworks">
+
+    </section>
+
+
+
+
+
+
+    <section id="aboutus" class="grey darken-4">
+        <footer class="container flex">
+                <p class="l">Meet Attendance &copy; 2020</p>
+                <p class="r">Coded by <a href="https://kurilpratik.wordpress.com" target="_blank">Pratik Kuril</a></p>
+        </footer>
+    </section>
+
+
+
+    <!-- Log In Bottom Modal -->
+            <form id="modal1" class="modal z-depth-2">
+                <div class="login-form">
+                    <div class="contain">
+                        <input type="text" placeholder="username"/>
+                        <input type="password" placeholder="password"/>
+                        <button class="btn waves-effect teal darken-4"><a href="dashboard.html">Login</a></button>
+                        <p class="message">Not registered? <a href="#register">Create an account</a></p>    
+                    </div>
+                </div>
+            </form>
+
+        <!-- Add 'modal-close' class to the button you want to use to close the modal -->
+
+    <script src="index.js"></script>
+    
+
+
+
+
+</body>
+</html>
